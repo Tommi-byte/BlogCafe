@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Café</title>
+    <meta name="description" content="Página web de un blog de café">
     <!-- Prefetch -->
     <link rel="prefetch" href="nosotros.html" as="document">
 
@@ -24,7 +25,6 @@
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="preload" href="img/img/blog1.jpg" as="image">
 
 </head>
 
@@ -59,7 +59,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="img/img/blog2.jpg" alt="Imagen Blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="img/img/blog2.jpg" alt="Imagen Blog">
+                    </picture>
                 </div>
 
                 <div class="entrada__contenido">
@@ -75,7 +78,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="img/img/blog3.jpg" alt="Imagen Blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="img/img/blog3.jpg" alt="Imagen Blog">
+                    </picture>
                 </div>
 
                 <div class="entrada__contenido">
@@ -91,7 +97,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="img/img/blog1.jpg" alt="Imagen Blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="img/img/blog1.jpg" alt="Imagen Blog">
+                    </picture>
                 </div>
 
                 <div class="entrada__contenido">
@@ -116,7 +125,7 @@
                     <p class="widget-curso__label">Cupo:
                         <span class="widget-curso__informacion">20</span>
                     </p>
-                    <a href="entrada.html" class="boton boton--secundario">Ver Curso</a>
+                    <a href="entrada.html" class="boton boton--secundario">Más Informacion sobre nuestros cursos</a>
                 </li>
                 <li class="widget-curso">
                     <h4 class="no-margin">4 recetas de café para principiantes</h4>
@@ -126,7 +135,7 @@
                     <p class="widget-curso__label">Cupo:
                         <span class="widget-curso__informacion">20</span>
                     </p>
-                    <a href="entrada.html" class="boton boton--secundario">Ver Curso</a>
+                    <a href="entrada.html" class="boton boton--secundario">Más Informacion sobre nuestros cursos</a>
                 </li>
             </ul>
         </aside>
@@ -148,6 +157,8 @@
         </div>
 
     </footer>
+
+    <script src="js/modernizr.js" ></script>
 
 </body>
 
